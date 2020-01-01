@@ -152,7 +152,13 @@ let g:w3m#search_engine = 'http://search.yahoo.co.jp/search?search.x=1&fr=top_ga
 let g:cheatsheet#cheat_file = '$HOME/.vim/vim_cheetsheet.md'
 
 " Quick run
-"let g:quickrun_config = {}
 "let g:quickrun_config['slim'] = {'command' : 'slimrb', 'exec' : ['%c -p %s']}
+let g:quickrun_config = {
+            \   "_" : {
+            \   "outputter":"message",
+            \   }
+            \}
+"map <C-e> :<C-u>QuickRun<CR>
+"map <Leader>r " default
 
 

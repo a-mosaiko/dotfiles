@@ -17,6 +17,8 @@
 
 ## プラグインの使用方法
 * LSP
+  * LSPインストール
+    - `:LspInstallServer`: 現環境にLspServerを自動インストール&有効化
   * ファイル診断
     - `<Leader>fc`, `:LspDocumentDiagnostics`: ファイル診断
     - `<Leader>n`, `:LspNextError`: LspDocumentDiagnosticsの次のエラーへ
@@ -37,11 +39,11 @@
     - `<C-k>`, `<Leader>k`, `:LspHover`: シンボル情報をホバー表示
     - `:LspStatus`: サーバ状態の表示
 
+* Quickrun
+  - `<Leader>r`: run!
 
 * NERDCOMMENTER
   - `<Leader>c<space>`: comment out
-* ALE
-  - 非同期コードチェック
 
 * Neosnippet
   - .vim/snippets/
