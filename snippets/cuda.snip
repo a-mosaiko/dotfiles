@@ -1,0 +1,19 @@
+include cpp.snip
+
+snippet     global_func
+abbr        global_func
+options     head
+    __global__ void ${1:#:func_name}(${2:#:augs}) {
+      ${3:TARGET}
+    }
+
+snippet     device_func
+abbr        device_func
+options     head
+    __device__ ${1:void} ${2:#:func_name}(${3:#:augs}) {
+      ${4:TARGET}
+    }
+
+snippet     kernel_execution
+abbr        kernel_execution
+    ${1:#:func_name} <<<${2:#:grid_size}, ${3:#:block_size}>>> (${4:#:augs});
